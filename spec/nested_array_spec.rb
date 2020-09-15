@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+require 'pry'
 describe 'When a learning to build nested arrays,' do
   it 'the assembled_matrix method returns a nested array made from two constants, CONVENTIONAL_PRODUCE and ORGANIC_PRODUCE' do
     expect(assembled_matrix).to eq([CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE])
@@ -13,10 +13,12 @@ end
 describe 'When a learning to perform lookups in nested arrays,' do
   describe 'when given a matrix, row, and column argument,' do
     it 'the matrix_lookup method returns the requested value' do
+      puts assembled_matrix[0]
+      puts assembled_matrix[1]
       expect(matrix_lookup(assembled_matrix, 1, 1)).to eq("Potatoes")
       expect(matrix_lookup(sorted_matrix, 1, 1)).to eq("Avocadoes")
-    end 
-  end 
+    end
+  end
 end
 
 describe 'When a learning to update cells in nested arrays,' do
