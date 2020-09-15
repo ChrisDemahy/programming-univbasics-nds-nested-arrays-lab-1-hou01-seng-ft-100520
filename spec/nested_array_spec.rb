@@ -13,7 +13,8 @@ end
 describe 'When a learning to perform lookups in nested arrays,' do
   describe 'when given a matrix, row, and column argument,' do
     it 'the matrix_lookup method returns the requested value' do
-      puts assembled_matrix
+      puts assembled_matrix[0]
+      puts assembled_matrix[1]
       expect(matrix_lookup(assembled_matrix, 1, 1)).to eq("Potatoes")
       expect(matrix_lookup(sorted_matrix, 1, 1)).to eq("Avocadoes")
     end
