@@ -16,8 +16,8 @@ describe 'When a learning to perform lookups in nested arrays,' do
       puts assembled_matrix
       expect(matrix_lookup(assembled_matrix, 1, 1)).to eq("Potatoes")
       expect(matrix_lookup(sorted_matrix, 1, 1)).to eq("Avocadoes")
-    end 
-  end 
+    end
+  end
 end
 
 describe 'When a learning to update cells in nested arrays,' do
